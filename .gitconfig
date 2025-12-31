@@ -3,3 +3,5 @@
 	email = dempstertay123@gmail.com
 [push]
 	autoSetupRemote = true
+[fetch]
+	prune = true
