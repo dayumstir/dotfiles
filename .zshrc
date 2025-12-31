@@ -22,16 +22,22 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git 
+plugins=(git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	autoupdate
 	you-should-use
 	zsh-bat
+	zoxide
 	)
+
+# zoxide override `cd` command
+ZOXIDE_CMD_OVERRIDE="cd"
 
 # Optimized approach for loading zsh-completions
 fpath+=("$ZSH/custom/plugins/zsh-completions/src")
+
+# Reload plugins
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
