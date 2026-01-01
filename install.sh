@@ -7,7 +7,7 @@ echo "✅ Homebrew installed!"
 echo "--------------------------------------------------"
 
 echo "📁 Cloning dotfiles repository..."
-git clone https://github.com/dayumstir/dotfiles.git ~/dotfiles
+git clone --recurse-submodules https://github.com/dayumstir/dotfiles.git ~/dotfiles
 echo "✅ Repository cloned!"
 echo "--------------------------------------------------"
 
