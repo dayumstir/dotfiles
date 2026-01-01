@@ -1,43 +1,35 @@
-# Dotfiles Setup
+# dotfiles
 
-This repository contains my personal configuration files (dotfiles). Follow the steps below to set up the environment on a new machine.
+This repository contains my personal configuration files (dotfiles).
 
-## Prerequisites
+## 💪 Features
 
-- **Git**: Required to clone the repository.
-- **Homebrew**: Required to install dependencies and manage packages.
+- Entirely bootstrapped
+- No dependencies or prerequisites
+- Single script to setup new machines
 
-## Installation Guide
+## 🔧 Setup
 
-### 1. Clone the Repository
-
-First, install Git if it is not already available, and clone this repository to your home directory (or your preferred location):
-
-```sh
-git clone <repository-url> ~/dotfiles
-cd ~/dotfiles
-```
-
-### 2. Install Dependencies
-
-Install Homebrew if you haven't already:
+Run this one-liner to install everything:
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dayumstir/dotfiles/main/install.sh)"
 ```
 
-Then, use the `Brewfile` to install all required packages, applications, and tools (including `stow`):
+And enjoy! 🎉
+
+## 🧑‍💻 Development
+
+### Update Brewfile
 
 ```sh
-brew bundle
+brew bundle dump --force
 ```
 
-### 3. Symlink Dotfiles
-
-Once `stow` is installed via Homebrew, use it to symlink the dotfiles to your home directory:
+### Adding new custom omz plugins
 
 ```sh
-stow .
+git submodule add <URL_TO_REPO> $ZSH_CUSTOM/plugins/<CUSTOM_PLUGIN>
 ```
 
-This command will create symbolic links for the configuration files in the current directory (e.g., `.zshrc`, `.vimrc`) pointing to your home directory.
+Custom plugins are also git repositories which will be nested in this dotfiles repository.
