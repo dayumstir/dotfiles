@@ -16,7 +16,7 @@ Run this one-liner to install everything:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dayumstir/dotfiles/main/install.sh)"
 ```
 
-And enjoy! 🎉
+Import the Raycast config and enjoy! 🎉
 
 ## 🧑‍💻 Development
 
