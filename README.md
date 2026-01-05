@@ -26,10 +26,10 @@ And enjoy! 🎉
 brew bundle dump --force
 ```
 
-### Adding new custom omz plugins
+### Adding new custom omz plugins/themes
 
 ```sh
-git submodule add <URL_TO_REPO> $ZSH_CUSTOM/plugins/<CUSTOM_PLUGIN>
+git submodule add <URL_TO_REPO> omz-custom/<PLUGINS/THEMES>/<CUSTOM_PLUGIN/THEME>
 ```
 
-Custom plugins are also git repositories which will be nested in this dotfiles repository.
+Custom plugins/themes are also git repositories which will be nested in this dotfiles repository.
