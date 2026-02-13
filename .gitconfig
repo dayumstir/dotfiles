@@ -5,3 +5,5 @@
 	autoSetupRemote = true
 [fetch]
 	prune = true
+[core]
+	excludesfile = /Users/dempster/.gitignore_global
