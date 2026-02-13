@@ -33,3 +33,9 @@ git submodule add <URL_TO_REPO> omz-custom/<PLUGINS/THEMES>/<CUSTOM_PLUGIN/THEME
 ```
 
 Custom plugins/themes are also git repositories which will be nested in this dotfiles repository.
+
+To update submodules, run this command
+
+```sh
+git submodule update --remote --merge
+```
