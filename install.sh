@@ -43,6 +43,31 @@ else
     RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+# --- Oh My Zsh Custom Plugins & Themes ---
+echo ""
+echo "🔌 Installing custom plugins and themes..."
+CUSTOM_DIR="$DOTFILES_DIR/omz-custom"
+plugins=(
+    "plugins/autoupdate https://github.com/TamCore/autoupdate-oh-my-zsh-plugins"
+    "plugins/you-should-use https://github.com/MichaelAquilina/zsh-you-should-use.git"
+    "plugins/zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions"
+    "plugins/zsh-bat https://github.com/fdellwing/zsh-bat.git"
+    "plugins/zsh-completions https://github.com/zsh-users/zsh-completions.git"
+    "plugins/zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    "themes/powerlevel10k https://github.com/romkatv/powerlevel10k.git"
+)
+for entry in "${plugins[@]}"; do
+    path="${entry%% *}"
+    url="${entry#* }"
+    dest="$CUSTOM_DIR/$path"
+    if [ -d "$dest" ]; then
+        echo "✅ $path already installed, skipping."
+    else
+        echo "📥 Cloning $path..."
+        git clone --depth 1 "$url" "$dest"
+    fi
+done
+
 # --- Stow ---
 echo ""
 echo "🔗 Symlinking dotfiles with stow..."
