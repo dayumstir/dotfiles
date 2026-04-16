@@ -26,16 +26,10 @@ Create a `.zshrc.local` file to export secrets, import the Raycast config (under
 brew bundle dump --force
 ```
 
-### Adding new custom omz plugins/themes
+### Updating Oh My Zsh and custom plugins/themes
 
 ```sh
-git submodule add <URL_TO_REPO> omz-custom/<PLUGINS/THEMES>/<CUSTOM_PLUGIN/THEME>
+upgrade_oh_my_zsh_all
 ```
 
-Custom plugins/themes are also git repositories which will be nested in this dotfiles repository.
-
-To update submodules, run this command
-
-```sh
-git submodule update --remote --merge
-```
+This calls the Oh My Zsh update function `omz update`, then runs `upgrade_oh_my_zsh_custom` to update all custom plugins and themes.

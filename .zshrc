@@ -37,6 +37,9 @@ plugins=(git
 # zoxide override `cd` command
 ZOXIDE_CMD_OVERRIDE="cd"
 
+# bat plugin: never use a pager
+export BAT_PAGER=""
+
 # Optimized approach for loading zsh-completions
 fpath+=("$ZSH_CUSTOM/plugins/zsh-completions/src")
 
@@ -60,7 +63,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
