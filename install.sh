@@ -23,10 +23,10 @@ eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null || /usr/local/bin/brew shell
 echo ""
 echo "📁 Cloning dotfiles repository..."
 if [ -d "$DOTFILES_DIR" ]; then
-    echo "✅ Dotfiles directory already exists, updating submodules..."
-    git -C "$DOTFILES_DIR" submodule update --init --recursive
+    echo "✅ Dotfiles directory already exists, pulling latest..."
+    git -C "$DOTFILES_DIR" pull
 else
-    git clone --recurse-submodules https://github.com/dayumstir/dotfiles.git "$DOTFILES_DIR"
+    git clone https://github.com/dayumstir/dotfiles.git "$DOTFILES_DIR"
 fi
 
 # --- Brew Bundle ---
@@ -73,8 +73,11 @@ echo ""
 echo "🔗 Symlinking dotfiles with stow..."
 cd "$DOTFILES_DIR"
 stow .
+echo "✅ Dotfiles symlinked successfully."
 
 echo ""
-echo "=================================================="
-echo "  ✅ Done! Restart your terminal to apply changes."
-echo "=================================================="
+echo "================================================================="
+echo "  🥳 Done! Restart your terminal to apply changes."
+echo "  📝 Create a .zshrc.local file to export secrets."
+echo "  🚀 Import Raycast config: Raycast → Import Settings & Data."
+echo "================================================================="
