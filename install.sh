@@ -32,7 +32,7 @@ fi
 # --- Brew Bundle ---
 echo ""
 echo "📦 Installing packages from Brewfile..."
-brew bundle --verbose --file="$DOTFILES_DIR/Brewfile"
+HOMEBREW_BUNDLE_NO_PARALLEL=1 brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 # --- Oh My Zsh ---
 echo ""
