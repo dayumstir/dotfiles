@@ -16,7 +16,7 @@ Run this one-liner to install everything:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dayumstir/dotfiles/main/install.sh)"
 ```
 
-Create a `.zshrc.local` file to export secrets, import the Raycast config (Raycast → Import Settings & Data), and enjoy! 🎉
+Create a `.zshrc.local` file to export secrets, import the Raycast config (Raycast → Import Settings & Data), optionally create `~/.gitignore_global`, and enjoy! 🎉
 
 ## 🧑‍💻 Development
 
