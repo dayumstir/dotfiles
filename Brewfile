@@ -1,5 +1,3 @@
-tap "jsattler/tap"
-tap "supercmdlabs/supercmd"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Toolchain of the web
@@ -10,8 +8,6 @@ brew "f3"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -43,7 +39,7 @@ cask "alcove"
 # Chromium based browser
 cask "arc"
 # Terminal-based AI coding assistant
-cask "claude-code"
+cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Voice and text chat software
