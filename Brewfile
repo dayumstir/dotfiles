@@ -54,20 +54,14 @@ cask "google-chrome"
 cask "intellij-idea"
 # Software for Logitech devices
 cask "logi-options+"
-# Tool to control external monitor brightness & volume
-cask "monitorcontrol"
-# Smooths scrolling and set mouse scroll directions independently
-cask "mos"
-# App to write, plan, collaborate, and get organised
-cask "notion"
+# Read-only disk space visualiser
+cask "neodisk"
 # Calendar for professionals and teams
 cask "notion-calendar"
 # Get up and running with large language models locally
 cask "ollama-app"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Screenshot measurement and annotation tool
-cask "shottr"
 # Music streaming service
 cask "spotify"
 # Dictation tool including LLM reformatting
@@ -78,6 +72,8 @@ cask "todoist-app"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Menu bar toolkit with keep-awake, system monitor and volume mixer
+cask "vorssaint"
 # Native desktop client for WhatsApp
 cask "whatsapp"
 # Video communication and virtual meeting platform
