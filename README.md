@@ -16,7 +16,8 @@ Run this one-liner to install everything:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dayumstir/dotfiles/main/install.sh)"
 ```
 
-Create a `.zshrc.local` file to export secrets, import the Raycast config (Raycast → Import Settings & Data), optionally create `~/.gitignore_global`, and enjoy! 🎉
+Then create a `.zshrc.local` file to export secrets, import the Raycast config
+(Raycast → Import Settings & Data), and enjoy! 🎉
 
 ## 🧑‍💻 Development
 
@@ -26,10 +27,18 @@ Create a `.zshrc.local` file to export secrets, import the Raycast config (Rayca
 brew bundle dump --force
 ```
 
-### Updating Oh My Zsh and custom plugins/themes
+### Update Oh My Zsh and custom plugins/themes
 
 ```sh
 upgrade_oh_my_zsh_all
 ```
 
-This calls the Oh My Zsh update function `omz update`, then runs `upgrade_oh_my_zsh_custom` to update all custom plugins and themes.
+An alias from the `autoupdate` plugin. It runs Oh My Zsh's `tools/upgrade.sh`,
+then `upgrade_oh_my_zsh_custom` to update every custom plugin and theme in
+`omz-custom/`. Note that running `omz update` directly will not update the
+custom plugins.
+
+### Update the Raycast config
+
+Export from Raycast → Export Settings & Data, drop the new `.rayconfig` at the
+repo root, and delete the previous one.
