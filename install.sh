@@ -75,6 +75,24 @@ cd "$DOTFILES_DIR"
 stow .
 echo "✅ Dotfiles symlinked successfully."
 
+# --- Agent Skills ---
+echo ""
+echo "🧠 Linking agent skills into Claude Code..."
+CLAUDE_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
+mkdir -p "$CLAUDE_DIR/skills"
+ln -sfn "$HOME/.agents/AGENTS.md" "$CLAUDE_DIR/CLAUDE.md"
+for skill in "$HOME/.agents/skills"/*/; do
+    [ -d "$skill" ] || continue
+    name=$(basename "$skill")
+    dest="$CLAUDE_DIR/skills/$name"
+    if [ -e "$dest" ] && [ ! -L "$dest" ]; then
+        echo "⚠️  Skipping $name: $dest exists and is not a symlink."
+        continue
+    fi
+    ln -sfn "$HOME/.agents/skills/$name" "$dest"
+done
+echo "✅ Agent skills linked."
+
 echo ""
 echo "================================================================="
 echo "  🥳 Done! Restart your terminal to apply changes."
