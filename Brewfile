@@ -38,6 +38,10 @@ brew "zoxide"
 cask "alcove"
 # Chromium based browser
 cask "arc"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
 # OpenAI's coding agent that runs in your terminal
@@ -52,8 +56,6 @@ cask "ghostty"
 cask "google-chrome"
 # Java IDE by JetBrains
 cask "intellij-idea"
-# Software for Logitech devices
-cask "logi-options+"
 # Read-only disk space visualiser
 cask "neodisk"
 # Calendar for professionals and teams
