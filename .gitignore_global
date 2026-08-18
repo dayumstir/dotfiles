@@ -1,1 +1,6 @@
 .DS_Store
+
+# Agent skill config (personal, per-machine - never committed to a project repo)
+CLAUDE.local.md
+AGENTS.local.md
+docs/agents/
