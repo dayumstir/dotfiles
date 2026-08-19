@@ -158,6 +158,25 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-19T00:43:05.694Z",
       "updatedAt": "2026-08-19T00:43:05.694Z"
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "skillFolderHash": "99bd56983e42bc752c52da67f1112e4121781cd1",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-19T14:41:29.058Z",
+      "updatedAt": "2026-08-19T14:41:29.058Z"
+    },
+    "unslop": {
+      "source": "poteto/noodle",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/poteto/noodle.git",
+      "skillPath": ".agents/skills/unslop/SKILL.md",
+      "skillFolderHash": "3648e2c511b11c011896e05927561576e58e3c9d",
+      "installedAt": "2026-08-19T14:46:03.907Z",
+      "updatedAt": "2026-08-19T14:46:03.907Z"
     }
   },
   "dismissed": {
