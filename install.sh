@@ -32,7 +32,10 @@ fi
 # --- Brew Bundle ---
 echo ""
 echo "📦 Installing packages from Brewfile..."
-HOMEBREW_BUNDLE_NO_PARALLEL=1 brew bundle --file="$DOTFILES_DIR/Brewfile"
+if ! HOMEBREW_BUNDLE_NO_JOBS=1 brew bundle --file="$DOTFILES_DIR/Brewfile"; then
+    echo "⚠️  Some Brewfile entries failed. Continuing with the rest of the setup."
+    echo "   Re-run: brew bundle --file=\"$DOTFILES_DIR/Brewfile\""
+fi
 
 # --- Oh My Zsh ---
 echo ""
