@@ -4,3 +4,8 @@
 CLAUDE.local.md
 AGENTS.local.md
 docs/agents/
+
+# Agent domain docs (personal working notes - kept out of shared project repos)
+CONTEXT.md
+CONTEXT-MAP.md
+**/docs/adr/
