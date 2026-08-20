@@ -48,8 +48,6 @@ cask "claude-code@latest"
 cask "codex"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker-desktop"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
@@ -78,8 +76,6 @@ cask "vlc"
 cask "vorssaint"
 # Native desktop client for WhatsApp
 cask "whatsapp"
-# Video communication and virtual meeting platform
-cask "zoom"
 vscode "anthropic.claude-code"
 vscode "biomejs.biome"
 vscode "bradlc.vscode-tailwindcss"
