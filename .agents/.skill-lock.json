@@ -15,10 +15,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/frontend-design/SKILL.md",
-      "skillFolderHash": "0d5b74a14bdf3ebcd64f352d06376a2ef05ed296",
-      "pluginName": "example-skills",
+      "skillFolderHash": "d79e2a5bb4df4a386c2adcdd9ab8709bba28c3f6",
       "installedAt": "2026-07-02T13:10:28.518Z",
-      "updatedAt": "2026-07-02T13:10:28.518Z"
+      "updatedAt": "2026-09-08T05:07:26.758Z"
     },
     "vercel-react-best-practices": {
       "source": "vercel-labs/agent-skills",
@@ -196,7 +195,17 @@
       "skillFolderHash": "3d35cd438f4067b03c8b3792e038960e4ac11526",
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-23T02:07:52.343Z",
-      "updatedAt": "2026-08-23T02:07:52.343Z"
+      "updatedAt": "2026-08-28T15:18:35.069Z"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "skillFolderHash": "2242e8f05424b8c2ae94194a90d97b88d16108ec",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-28T15:18:35.066Z",
+      "updatedAt": "2026-08-28T15:18:35.066Z"
     }
   },
   "dismissed": {
