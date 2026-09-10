@@ -1,3 +1,4 @@
+\.DS_Store
 README.md
 
 \.git
@@ -7,3 +8,5 @@ Brewfile
 install\.sh
 
 .*\.rayconfig
+
+Vorssaint Settings\.plist
