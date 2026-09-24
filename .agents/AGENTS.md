@@ -7,7 +7,3 @@ user-level memory across all projects.
 ## Writing
 
 - Never use the em dash "—". Use a plain dash "-" instead.
-
-## Git
-
-- When writing commit messages, NEVER auto-add your agent name as co-author.
