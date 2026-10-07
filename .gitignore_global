@@ -6,6 +6,6 @@ AGENTS.local.md
 docs/agents/
 
 # Agent domain docs (personal working notes - kept out of shared project repos)
-CONTEXT.md
-CONTEXT-MAP.md
+GLOSSARY.md
+GLOSSARY-MAP.md
 **/docs/adr/
