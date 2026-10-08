@@ -13,7 +13,9 @@ echo "🍺 Installing Homebrew..."
 if command -v brew &>/dev/null; then
     echo "✅ Homebrew already installed, skipping."
 else
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # Download first so a failed curl aborts the script
+    brew_installer=$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    /bin/bash -c "$brew_installer"
 fi
 
 # Ensure brew is on PATH for the rest of this script (Apple Silicon + Intel)
@@ -37,13 +39,22 @@ if ! HOMEBREW_BUNDLE_NO_JOBS=1 brew bundle --file="$DOTFILES_DIR/Brewfile"; then
     echo "   Re-run: brew bundle --file=\"$DOTFILES_DIR/Brewfile\""
 fi
 
+# --- Stow ---
+# Before Oh My Zsh, so its installer keeps our ~/.zshrc instead of writing its own
+echo ""
+echo "🔗 Symlinking dotfiles with stow..."
+cd "$DOTFILES_DIR"
+stow .
+echo "✅ Dotfiles symlinked successfully."
+
 # --- Oh My Zsh ---
 echo ""
 echo "💻 Installing Oh My Zsh..."
-if [ -d "$HOME/.oh-my-zsh" ]; then
+if [ -f "$HOME/.oh-my-zsh/oh-my-zsh.sh" ]; then
     echo "✅ Oh My Zsh already installed, skipping."
 else
-    RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    omz_installer=$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+    RUNZSH=no KEEP_ZSHRC=yes sh -c "$omz_installer"
 fi
 
 # --- Oh My Zsh Custom Plugins & Themes ---
@@ -70,13 +81,6 @@ for entry in "${plugins[@]}"; do
         git clone --depth 1 "$url" "$dest"
     fi
 done
-
-# --- Stow ---
-echo ""
-echo "🔗 Symlinking dotfiles with stow..."
-cd "$DOTFILES_DIR"
-stow .
-echo "✅ Dotfiles symlinked successfully."
 
 # --- Agent Skills ---
 echo ""
