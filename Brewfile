@@ -57,12 +57,12 @@ cask "crossover"
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Horizontal and vertical rulers
+cask "free-ruler"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
 cask "google-chrome"
-# Homebrew's official GUI
-cask "homebrew-app"
 # Java IDE by JetBrains
 cask "intellij-idea"
 # Spreadsheet software
@@ -114,6 +114,7 @@ vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
 vscode "openai.chatgpt"
+vscode "openai.codex-audio"
 vscode "oxc.oxc-vscode"
 vscode "redhat.vscode-yaml"
 vscode "vitest.explorer"
