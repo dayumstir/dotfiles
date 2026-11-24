@@ -1,4 +1,6 @@
+tap "caezium/tap"
 tap "oven-sh/bun"
+tap "yetanotherbrowser/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Toolchain of the web
@@ -17,6 +19,8 @@ brew "git-xargs"
 brew "gradle"
 # Java-based project management
 brew "maven"
+# Deep clean and optimize your Mac
+brew "mole"
 # Manage multiple Node.js versions
 brew "nvm"
 # Create, run, and share large language models (LLMs)
@@ -35,24 +39,16 @@ brew "tree"
 brew "zoxide"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun", trusted: true
-# Utility to add Dynamic Island like features to notch area
-cask "alcove"
-# Chromium based browser
-cask "arc"
+# Free, open-source native GUI for the Mole CLI
+cask "caezium/tap/burrow", trusted: true
 # Menu bar calendar
 cask "calendr"
 # E-books management software
 cask "calibre"
-# OpenAI's official ChatGPT desktop app
-cask "chatgpt"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Terminal-based AI coding assistant
 cask "claude-code@latest"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
-# Tool to run Windows software
-cask "crossover"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -73,8 +69,6 @@ cask "microsoft-powerpoint"
 cask "microsoft-teams"
 # Word processor
 cask "microsoft-word"
-# Read-only disk space visualiser
-cask "neodisk"
 # Calendar for professionals and teams
 cask "notion-calendar"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -99,6 +93,8 @@ cask "vorssaint"
 cask "whatsapp"
 # Voice-to-text dictation with AI-powered auto-editing
 cask "wispr-flow"
+# WebKit browser for people and their AI agents
+cask "yetanotherbrowser/tap/yab", trusted: true
 # Video communication and virtual meeting platform
 cask "zoom"
 vscode "bradlc.vscode-tailwindcss"
@@ -113,8 +109,6 @@ vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"
-vscode "openai.chatgpt"
-vscode "openai.codex-audio"
 vscode "oxc.oxc-vscode"
 vscode "redhat.vscode-yaml"
 vscode "vitest.explorer"
