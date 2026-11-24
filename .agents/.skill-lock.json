@@ -156,15 +156,6 @@
       "installedAt": "2026-08-19T14:41:29.058Z",
       "updatedAt": "2026-10-08T01:48:19.426Z"
     },
-    "unslop": {
-      "source": "poteto/noodle",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/poteto/noodle.git",
-      "skillPath": ".agents/skills/unslop/SKILL.md",
-      "skillFolderHash": "3648e2c511b11c011896e05927561576e58e3c9d",
-      "installedAt": "2026-08-19T14:46:03.907Z",
-      "updatedAt": "2026-08-19T14:46:03.907Z"
-    },
     "ask-matt": {
       "source": "mattpocock/skills",
       "sourceType": "github",
